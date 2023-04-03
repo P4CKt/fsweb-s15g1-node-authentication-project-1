@@ -16,10 +16,10 @@ Projeyi fokrlayın, klonlayın ve bolca commitleyin.
 
 Erişim fonksiyonlarını `api/users/users-model.js` dosyasına yazacaksınız:
 
-- [ ] `bul`
-- [ ] `goreBul`
-- [ ] `idyeGoreBul`
-- [ ] `ekle`
+- [+] `bul`
+- [+] `goreBul`
+- [+] `idyeGoreBul`
+- [+] `ekle`
 
 #### 2B - Middleware Fonksiyonları
 

@@ -1,5 +1,5 @@
 // `sinirli` middleware'ını `auth-middleware.js` dan require edin. Buna ihtiyacınız olacak!
-
+const { bul, goreBul, idyeGoreBul, ekle } = require("./users-model");
 
 /**
   [GET] /api/users
@@ -24,6 +24,4 @@
   }
  */
 
-
 // Diğer modüllerde kullanılabilmesi için routerı "exports" nesnesine eklemeyi unutmayın.
-
