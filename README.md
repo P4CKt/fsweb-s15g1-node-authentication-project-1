@@ -25,10 +25,10 @@ Erişim fonksiyonlarını `api/users/users-model.js` dosyasına yazacaksınız:
 
 Auth middlewarelarını `api/auth/auth-middleware.js` dosyasına yazacaksınız:
 
-- [ ] `sinirli`
-- [ ] `usernameBostami`
-- [ ] `sifreGecerlimi`
-- [ ] `usernameVarmi`
+- [+] `sinirli`
+- [+] `usernameBostami`
+- [+] `sifreGecerlimi`
+- [+] `usernameVarmi`
 
 #### 2C - Uçnoktalar
 
@@ -36,10 +36,10 @@ Kimlik doğrulama, oturumlar ve cookiler kullanılarak izlenecektir. Talimatlar 
 
 Aşağıdaki uç noktaları yazın. Birincisi `api/users/users-router.js` sayfasında ve diğerleri `api/auth/auth-router.js` sayfasında:
 
-- [ ] `[GET] /api/users`
-- [ ] `[POST] /api/auth/register`
-- [ ] `[POST] /api/auth/login`
-- [ ] `[GET] /api/auth/logout`
+- [+] `[GET] /api/users`
+- [+] `[POST] /api/auth/register`
+- [+] `[POST] /api/auth/login`
+- [+] `[GET] /api/auth/logout`
 
 #### Users Şeması
 

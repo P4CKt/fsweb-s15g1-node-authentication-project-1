@@ -3,9 +3,10 @@ const db = require("../../data/db-config");
 async function bul() {
   const users = await db("users");
 
-  return users.map((item) => {
+  const allUsers = users.map((item) => {
     return { user_id: item.user_id, username: item.username };
   });
+  return allUsers;
 }
 
 async function goreBul(filtre) {
@@ -14,15 +15,14 @@ async function goreBul(filtre) {
 
 async function idyeGoreBul(user_id) {
   let filtredById = await db("users").where("user_id", user_id).first();
-  return { user_id: filtredById.user_id, username: filtredById.username };
+  return { username: filtredById.username, user_id: filtredById.user_id };
 }
 
 async function ekle(user) {
   let insertUser = await db("users").insert(user);
-  let insertedUser = await idyeGoreBul(insertUser);
-  return insertedUser;
+  return idyeGoreBul(insertUser[0]);
 }
-n.module.exports = {
+module.exports = {
   bul,
   goreBul,
   idyeGoreBul,
